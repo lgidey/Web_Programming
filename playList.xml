@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href = "StyleSongList.css"?>
+
+<setlist>
+
+    <song>
+            <title>Easy Living</title>
+            <artist>Billie Holiday</artist>
+            <genre>Vocal Jazz</genre>
+            <year>1937</year>
+    </song>
+
+    <song>
+            <title>High For Hours</title>
+            <artist>J.Cole</artist>
+            <genre>Hip-Hop/Rap</genre>
+            <year>2017</year>
+    </song>
+
+    <song>
+            <title>Ride Natty Ride</title>
+            <artist>Bob Marley</artist>
+            <genre>Reggae </genre>
+            <year>1979</year>
+    </song>
+
+    <song>
+            <title>Saturday Night Fish Fry</title>
+            <artist>Louis Jordan</artist>
+            <genre>Jump Blues/RnB</genre>
+            <year>1949</year>
+    </song>
+
+    <song>
+            <title>Sebebu</title>
+            <artist>Aster Aweke</artist>
+            <genre>Ethio Jazz</genre>
+            <year>1989</year>
+    </song>
+
+    <song>
+            <title>La Novelita</title>
+            <artist>Aventura</artist>
+            <genre>Bachata</genre>
+            <year>1999</year>
+    </song>
+
+    <song>
+            <title>Killing me Softly</title>
+            <artist>Fugees</artist>
+            <genre>Soul</genre>
+            <year>1997</year>
+    </song>
+
+    <song>
+            <title>Bliding Lights </title>
+            <artist>The weeknd</artist>
+            <genre>Soul/ R&amp;B</genre>
+            <year>2020</year>
+    </song>
+
+    <song>
+            <title>Blue Moon</title>
+            <artist>Frank Sinatra </artist>
+            <genre>Vocal Jazz</genre>
+            <year>1961</year>
+    </song>
+
+    <song>
+            <title>Papermoon</title>
+            <artist>Ella Fitzgerland</artist>
+            <genre>Vocal Jazz</genre>
+            <year>1961</year>
+    </song>
+
+</setlist>

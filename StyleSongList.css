@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+setlist{
+    display:block;
+    background-color: #f0b4b4;
+    font-family: sans-serif;
+    width: 70%;
+    margin: 5% 15% 10% 15%;
+
+
+}
+song {
+    display: block;
+    margin: 15px;
+    text-align: center;
+    border: 8px  solid black;
+    background-color: #c7afaf;
+}
+
+title {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    text: bold;
+    color: white;
+}
+
+artist {
+    display: block;
+    text-align: center;
+    
+}
+        artist:before{content:"Artist:"; color:#8a5037;
+            text: bold;
+        }
+
+genre {
+    display: block;
+    
+}
+        genre:before{content:"Genre:"; color: #8a5037;}
+
+year {
+    display: block;
+}
+        year:before{content:"Year:"; color: #8a5037;}
