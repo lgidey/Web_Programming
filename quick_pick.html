@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quick Pick</title>
+        <style>
+            .tostyle { display: block; font-size: 30px; padding: 5px; margin: 10px; font-size: 24px; }
+           
+            h2 {font-size: 30px;  border: 20px;}
+            body {
+                
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+
+            
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2><b>Welcome!</b></Welcome></h2>
+        <div class="tostyle">
+        <script language="javascript">
+
+        function randomNum(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+        
+        var nums = []; 
+        
+        for (var i = 0; i < 5; i++) {
+            nums[i] = randomNum(48) + 1; 
+        }
+
+        var lucky_num = randomNum(18) + 1;
+        
+    
+        nums.sort( function(a, b) { return a - b } ); 
+        
+        var text1 = "Your Quick Pick numbers:"  
+        document.write(text1.bold()+ "<br>");
+        for (var i = 0; i < 5; i++) {
+            document.write( nums[i] + " ");
+
+        }
+
+        document.write("<br><br>") 
+        var text2 = "The Lucky Ball Number:"
+
+        
+        document.write(text2.bold()+  "<br>" + lucky_num + "<br><br>")
+
+       
+        var guesses_num = prompt("Enter in winning numbers separated by a space");
+        var guess_lucky = prompt("Enter in lucky ball number");
+
+        var matchings = 0;
+
+        
+        var split_nums = guesses_num.split(" ");         
+
+        var guesses_sorted = split_nums.sort( function(a, b) {return a - b} );
+
+
+        //------check number of matchings-------------------
+        for (var i = 0; i < guesses_sorted.length; i++) {
+            for(var j = 0; j < 5; j++)
+            {
+                if (guesses_sorted[i] == nums[j] )
+                    matchings++;
+
+            }
+        }
+
+
+        if ( lucky_num == guess_lucky) {
+            matchings += 0.5;
+        }
+                
+        var result;
+
+        switch(matchings)
+        {
+            case 5.5: result = "$7,000 a WEEK for LIFE"; break;
+            case 5: result = "$25,000 a YEAR for LIFE"; break;
+            case 4.5: result = "$5,000"; break;
+            case 4: result = "$200"; break;
+            case 3.5: result = "$150"; break;
+            case 3: result = "$20"; break;
+            case 2.5: result = "$25"; break;
+            case 2: result = "$3"; break;
+            case 1.5: result = "$6"; break;
+            case 0.5: result = "$4"; break;
+            default: result = ""; break;
+        }
+        
+        
+        var text3 = "Your Winning Numbers are: "
+        var text4 = "Your Winning lucky ball number is: "
+        var text5 = "Your Payout is: "
+        var text6 = "Results: "
+        document.write(txt3.bold()+"<br>" + guesses_sorted[0] + " " + guesses_sorted[1] + " " + guesses_sorted[2] + " " + guesses_sorted[3] + " " + guesses_sorted[4] + "<br><br>");
+        document.write(txt4.bold()+"<br>" + guess_lucky + " <br><br>");
+        
+
+       
+        if(result != "")
+            document.write("You won! " + text5.bold() + result);
+        else 
+            document.write(text6.bold()+ "You don't win anything, TRY AGAIN!");
+
+        </script>
+        </div>
+    </body>
+</html>
