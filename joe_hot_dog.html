@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Joe's Hotdogs</title>
+    </head>
+
+    <body>
+        <h1>Welcome to Joe's Hotdogs!</h1>
+        <script language="javascript">
+            document.write("<h2>Your Order</h2>");
+
+            a = prompt("How many hotdogs?");
+            b = prompt("How many fries?");
+            c = prompt("How many drinks");
+            
+            
+            document.write("#Hotdogs: " + a + "  at $3.25 is $" + (3.25 * a).toFixed(2)+"<br/>");
+            document.write("#Fries: " + b + "  at $2.00 is $" + (2 * b).toFixed(2) + "<br/>");
+            document.write("#Sodas: " + c + "  at $1.50 is $" + (1.50 * c).toFixed(2) + "<br/>");
+
+            var subtotal;
+            subtotal = ((1.50 * a)+(2 * b)+(3.25 * c));
+
+            document.write(subtotal >= 20? "You qualified for our 10% discount.<br/>":" <br/>");
+
+            total = (subtotal >= 20? subtotal * 0.90:subtotal);
+
+            document.write("Subtotal: $" + total.toFixed(2)+"<br/>");
+            document.write("Meals Tax: $" + (total * 0.0625).toFixed(2) + "<br/>");
+            document.write("Total: $" + (total + total * 0.0625).toFixed(2) + "<br/>");
+
+
+        </script>
+    </body>
+
+
+</html>
